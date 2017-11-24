@@ -1,19 +1,30 @@
 <?php
-
-
+/**
+ * Copyright © 2017 Voicyou Softwares . All rights reserved.
+ */
 namespace Voicyou\ProductViews\Controller\Adminhtml\ProductViews;
 
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\View\Result\PageFactory;
 
+/**
+ * Class Daily
+ *
+ * @package Voicyou\ProductViews\Controller\Adminhtml\ProductViews
+ */
 class Daily extends \Magento\Backend\App\Action
 {
     /**
-     * @var PageFactory
+     * @var Magento\Framework\View\Result\PageFactory
      */
     protected $resultPageFactory;
     
+    /**
+     * 
+     * @param Context $context
+     * @param PageFactory $resultPageFactory
+     */
     public function __construct(
         Context $context,
         PageFactory $resultPageFactory

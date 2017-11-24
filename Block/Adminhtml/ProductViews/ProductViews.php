@@ -1,19 +1,39 @@
 <?php
 /**
- * Copyright © 2016 Voicyou Softwares . All rights reserved.
+ * Copyright © 2017 Voicyou Softwares . All rights reserved.
  */
 namespace Voicyou\ProductViews\Block\Adminhtml\ProductViews;
+
+/**
+ * Class ProductViews
+ *
+ * @package Voicyou\ProductViews\Block\Adminhtml\ProductViews
+ */
 class ProductViews extends \Magento\Framework\View\Element\Template
 {
-    
-    protected $context;
-    protected $helperData;
-    protected $data;
     /**
-     * 
+     *
+     * @var \Magento\Framework\View\Element\Template\Context 
+     */
+    protected $context;
+    
+    /**
+     *
+     * @var \Magento\Backend\Helper\Data 
+     */
+    protected $helperData;
+    
+    /**
+     *
+     * @var array 
+     */
+    protected $data;
+    
+    /**
+     * type
      * @param \Magento\Framework\View\Element\Template\Context $context
      * @param \Magento\Backend\Helper\Data $helperData
-     * @param array $data
+     * @param array $datatype
      */
     public function __construct(\Magento\Framework\View\Element\Template\Context $context,
                                 \Magento\Backend\Helper\Data $helperData,

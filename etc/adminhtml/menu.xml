@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+    <menu>
+         <add id="Voicyou_MenuOptions::voicyou_productviewreports"  title="Product View Reports" translate="title" module="Voicyou_MenuOptions" sortOrder="50" parent="Voicyou_MenuOptions::voicyou_menuoptions" dependsOnModule="Voicyou_MenuOptions" resource="Voicyou_MenuOptions::voicyou_menuoptions"/>
+         <add id="Voicyou_MenuOptions::voicyou_productviewsdaily"   title="Daily"   module="Voicyou_MenuOptions" sortOrder="60" parent="Voicyou_MenuOptions::voicyou_productviewreports"  action="productviews/productviews/daily" resource="Voicyou_MenuOptions::voicyou_menuoptions" />  
+         <add id="Voicyou_MenuOptions::voicyou_productviewsmonthly" title="Monthly" module="Voicyou_MenuOptions" sortOrder="70" parent="Voicyou_MenuOptions::voicyou_productviewreports"  action="productviews/productviews/monthly" resource="Voicyou_MenuOptions::voicyou_menuoptions" />
+         <add id="Voicyou_MenuOptions::voicyou_productviewsyearly"  title="Yearly"  module="Voicyou_MenuOptions" sortOrder="80" parent="Voicyou_MenuOptions::voicyou_productviewreports"  action="productviews/productviews/yearly" resource="Voicyou_MenuOptions::voicyou_menuoptions" />    </menu>
+</config>

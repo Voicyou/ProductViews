@@ -1,7 +1,14 @@
 <?php
+/**
+ * Copyright © 2017 Voicyou Softwares . All rights reserved.
+ */
+namespace Voicyou\ProductViews\Model\ResourceModel\Yearly\Grid;
 
-namespace Voicyou\ProductViews\Model\ResourceModel\Yearly;
-
+/**
+ * Class Collection
+ *
+ * @package Voicyou\ProductViews\Model\ResourceModel\Yearly\Grid
+ */
 class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
 {
     protected function _construct()
